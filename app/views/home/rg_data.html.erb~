@@ -1,0 +1,37 @@
+<%= form_tag do %>
+
+	<div>
+		<div>
+			<%= label_tag(:name, "Name") %>
+		</div>
+		<%= @name %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Descp, "Description") %>
+		</div>
+		<%= @Descp %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Sex, "Gender") %>
+		</div>
+
+		<%= @sex %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:hobbies, "Hobbies") %>
+		</div>
+		<%= @interest %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:date, "Date of Birth") %>
+		</div>
+		<%= @date %>
+	</div>
+		
+	
+<% end %>
+

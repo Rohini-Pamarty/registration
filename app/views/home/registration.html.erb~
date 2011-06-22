@@ -1,0 +1,43 @@
+<%= form_tag(:action => "/home/rg_data", :method => "post") do %>
+
+	<div>
+		<div>
+			<%= label_tag(:name, "Name") %>
+		</div>
+		<%= text_field_tag(:name) %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Descp, "Description") %>
+		</div>
+		<%= text_area(:Descp, :size => "24*6") %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Sex, "Gender") %>
+		</div>
+
+		<%= label_tag(:male, "Male") %>
+		<%= radio_button_tag(:male, "Male") %>	
+		<%= label_tag(:female, "Female") %>
+		<%= radio_button_tag(:female, "Female") %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:hobbies, "Hobbies") %>
+		</div>
+		<%= check_box_tag(:music) %>
+		<%= label_tag(:music, "Music") %>
+		<%= check_box_tag(:movies) %>
+		<%= label_tag(:movies, "Movies") %><br>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:date, "Date of Birth") %>
+		</div>
+		<%= date_select :date, :order => [:date, :month, :year] %>
+	</div>
+		<%= submit_tag "Submit" %>
+	
+<% end %>
+

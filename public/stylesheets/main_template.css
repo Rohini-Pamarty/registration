@@ -1,0 +1,23 @@
+.header
+{
+	font-size: 30px;
+	color: green;
+	text-align: center;
+}
+.footer
+{
+	font-size: 10px;
+	color: blue;
+	text-align:right;
+}
+.links
+{
+	font-size: 15px;
+	text-align: center;
+	float: left;
+	padding-left: 140px;
+}
+.div_clear
+{
+	clear: both;
+}

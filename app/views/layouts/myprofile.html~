@@ -1,0 +1,43 @@
+<%= form_tag do %>
+
+	<div>
+		<div>
+			<%= label_tag(:name, "Name") %>
+		</div>
+		<%= @name %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Descp, "Description") %>
+		</div>
+		<%= @Descp %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:Sex, "Gender") %>
+		</div>
+
+		<%= label_tag(:male, "Male") %>
+		<%= radio_button_tag(:male, "Male") %>	
+		<%= label_tag(:female, "Female") %>
+		<%= radio_button_tag(:female, "Female") %>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:hobbies, "Hobbies") %>
+		</div>
+		<%= check_box_tag(:music) %>
+		<%= label_tag(:music, "Music") %>
+		<%= check_box_tag(:movies) %>
+		<%= label_tag(:movies, "Movies") %><br>
+	</div>
+	<div>
+		<div>
+			<%= label_tag(:date, "Date of Birth") %>
+		</div>
+		<%= @date %>
+	</div>
+		<%= submit_tag "Submit" %>
+	
+<% end %>
+
